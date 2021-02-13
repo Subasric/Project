@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image.png" href="icon.png"/>
+    <title>My Music</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+     body {
+  background-image: url('back.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+<script>
+    function myFunction1()
+    {
+      document.getElementById("demo1").innerHTML=" <img src=\'pic/agal.jpg\'  style=\'opacity: 0.7;float: left;width: 150px;padding: 10px;\'><span style=\'font-size: 1.1em; font-family: monospace;\'><b>Agalaathey</b></span> <br> <br> <audio controls <source src=\'songs/Dhom Dhom.mp3 \'type=\'audio/mp3\'> </audio> <br> <button onclick=\'deletefavourite1()\' style=\'font-size: small; background-color:gray;color: whitesmoke; padding:5px;\'>Remove From Favourites</button> <br> <br> <br> ";
+    
+    }
+    function myFunction2()
+    {
+        document.getElementById("demo2").innerHTML="<img src=\'pic/mazhai.jpg\'  style=\'opacity: 0.7;float: left;width: 150px;padding: 10px;\'><span style=\'font-size: 1.1em; font-family: monospace;\'><b>Mazhaiyum Theeyum</b></span> <br> <br> <audio controls <source src=\'songs/Mazhaiyum Theeyum.mp3\'type=\'audio/mp3\'></audio> <br> <button onclick=\'deletefavourite2()\' style=\'font-size: small; background-color:gray;color: whitesmoke; padding:5px; \'>Remove From Favourites</button> <br> <br> <br>";
+    }
+    function myFunction3()
+    {
+        document.getElementById("demo3").innerHTML="<img src=\'pic/unnaal.jpg\'  style=\'opacity: 0.7;float: left;width: 150px;padding: 10px;\'><span style=\'font-size: 1.1em; font-family: monospace;\'><b>Unnaal Unnaal</b></span> <br> <br> <audio controls> <source src=\'songs/Unnaal Unnaal.mp3\'type=\'audio/mp3\'></audio> <br> <button onclick=\'deletefavourite3()\' style=\'font-size: small; background-color:gray;color: whitesmoke; padding:5px;\'>Remove From Favourites</button> <br> <br> <br>";
+    }
+    function myFunction4()
+    {
+        document.getElementById("demo4").innerHTML="<img src=\'pic/dhom.jpg\'  style=\'opacity: 0.7;float: left;width: 150px;padding: 10px;\'><span style=\'font-size: 1.1em; font-family: monospace;\'><b>Dhom Dhom</b></span> <br> <br> <audio controls> <source src=\'songs/Dhom Dhom.mp3\'type=\'audio/mp3\'></audio> <br><br> <button onclick=\'deletefavourite4()\' style=\'font-size: small; background-color:gray;color: whitesmoke; padding:5px;\'>Remove From Favourites</button> <br> <br> <br>";
+    }
+    function myFunction5()
+    {
+        document.getElementById("demo5").innerHTML="<img src=\'pic/high.jpg\'  style=\'opacity: 0.7;float: left;width: 150px;padding: 10px;\'><span style=\'font-size: 1.1em; font-family: monospace;\'><b>High On Love</b></span> <br> <br> <audio controls> <source src=\'songs/High On Love.mp3\'type=\'audio/mp3\'></audio> <br> <br><button onclick=\'deletefavourite5()\' style=\'font-size: small; background-color:gray;color: whitesmoke; padding:5px;\'>Remove From Favourites</button> <br> <br> <br>";
+    }
+    function myFunction6()
+    {
+        document.getElementById("demo6").innerHTML="<img src=\'pic/you.jpg\'  style=\'opacity: 0.7;float: left;width: 150px;padding: 10px;\'><span style=\'font-size: 1.1em; font-family: monospace;\'><b>You'Re The One</b></span> <br> <br> <audio controls> <source src=\'songs/You'Re The One.mp3\'type=\'audio/mp3\'></audio> <br><br> <button onclick=\'deletefavourite6()\' style=\'font-size: small; background-color:gray;color: whitesmoke; padding:5px;\'>Remove From Favourites</button> <br> <br> <br>";
+    }
+    function myFunction7()
+    {
+        document.getElementById("demo7").innerHTML="<img src=\'pic/petta.jpg\'  style=\'opacity: 0.7;float: left;width: 150px;padding: 10px;\'><span style=\'font-size: 1.1em; font-family: monospace;\'><b>Marana Mass</b></span> <br> <br> <audio controls> <source src=\'songs/Marana.mp3\'type=\'audio/mp3\'></audio> <br><br> <button onclick=\'add1()\' style=\'font-size: small; background-color:gray;color: whitesmoke; padding:5px;\'>Add to Favourites</button> <br> <br> <br>";
+    }
+    function add1()
+    {
+        document.getElementById("demo65").innerHTML="<img src=\'pic/petta.jpg\'  style=\'opacity: 0.7;float: left;width: 150px;padding: 10px;\'><span style=\'font-size: 1.1em; font-family: monospace;\'><b>Marana Mass</b></span> <br> <br> <audio controls> <source src=\'songs/Marana.mp3\'type=\'audio/mp3\'></audio> <br><br> <button onclick=\'deletefavourite7()\' style=\'font-size: small; background-color:gray;color: whitesmoke; padding:5px;\'>Remove From Favourites</button> <br> <br> <br>";
+    }
+    function myFunction8()
+    {
+        document.getElementById("demo8").innerHTML="<img src=\'pic/single.jpg\'  style=\'opacity: 0.7;float: left;width: 150px;padding: 10px;\'><span style=\'font-size: 1.1em; font-family: monospace;\'><b>Single Pasanga</b></span> <br> <br> <audio controls> <source src=\'songs/Natpe Thunai.mp3\'type=\'audio/mp3\'></audio> <br><br> <button onclick=\'deletefavourite8()\' style=\'font-size: small; background-color:gray;color: whitesmoke; padding:5px;\'>Remove From Favourites</button> <br> <br> <br>";
+    }
+    function myFunction9()
+    {
+        document.getElementById("demo9").innerHTML="<img src=\'pic/rowdy.jpg\'  style=\'opacity: 0.7;float: left;width: 150px;padding: 10px;\'><span style=\'font-size: 1.1em; font-family: monospace;\'><b>Rowdy Baby</b></span> <br> <br> <audio controls> <source src=\'songs/Rowdy Baby.mp3\'type=\'audio/mp3\'></audio> <br><br> <button onclick=\'deletefavourite9()\' style=\'font-size: small; background-color:gray;color: whitesmoke; padding:5px;\'>Remove From Favourites</button> <br> <br> <br>";
+    }
+    function myFunction10()
+    {
+        document.getElementById("demo10").innerHTML="<img src=\'pic/vadi.jpg\'  style=\'opacity: 0.7;float: left;width: 150px;padding: 10px;\'><span style=\'font-size: 1.1em; font-family: monospace;\'><b>Vaadi Pulla</b></span> <br> <br> <audio controls> <source src=\'songs/Vaadi.mp3\'type=\'audio/mp3\'></audio> <br><br> <button onclick=\'deletefavourite10()\' style=\'font-size: small; background-color:gray;color: whitesmoke; padding:5px;\'>Remove From Favourites</button> <br> <br> <br>";
+    }
+    function myFunction11()
+    {
+        document.getElementById("demo11").innerHTML="<img src=\'pic/justin.jpg\'  style=\'opacity: 0.7;float: left;width: 150px;padding: 10px;\'><span style=\'font-size: 1.1em; font-family: monospace;\'><b>Baby</b></span> <br> <br> <audio controls> <source src=\'songs/justin.mp3\'type=\'audio/mp3\'></audio> <br><br> <button onclick=\'deletefavourite11()\' style=\'font-size: small; background-color:gray;color: whitesmoke; padding:5px;\'>Remove From Favourites</button> <br> <br> <br>";
+    }
+    function myFunction12()
+    {
+        document.getElementById("demo12").innerHTML="<img src=\'pic/oh.jpg\'  style=\'opacity: 0.7;float: left;width: 150px;padding: 10px;\'><span style=\'font-size: 1.1em; font-family: monospace;\'><b>Ohh Na Na</b></span> <br> <br> <audio controls> <source src=\'songs/ohh.mp3\'type=\'audio/mp3\'></audio> <br><br> <button onclick=\'deletefavourite12()\' style=\'font-size: small; background-color:gray;color: whitesmoke; padding:5px;\'>Remove From Favourites</button> <br> <br> <br>";
+    }
+    function myFunction13()
+    {
+        document.getElementById("demo13").innerHTML="<img src=\'pic/ms.jpg\'  style=\'opacity: 0.7;float: left;width: 150px;padding: 10px;\'><span style=\'font-size: 1.1em; font-family: monospace;\'><b>JAB TAK</b></span> <br> <br> <audio controls> <source src=\'songs/h2.mp3\'type=\'audio/mp3\'></audio> <br><br> <button onclick=\'deletefavourite13()\' style=\'font-size: small; background-color:gray;color: whitesmoke; padding:5px;\'>Remove From Favourites</button> <br> <br> <br>";
+    }
+    function myFunction14()
+    {
+        document.getElementById("demo14").innerHTML="<img src=\'pic/getha.jpg\'  style=\'opacity: 0.7;float: left;width: 150px;padding: 10px;\'><span style=\'font-size: 1.1em; font-family: monospace;\'><b>Ethe na pyeer</b></span> <br> <br> <audio controls> <source src=\'songs/h1.mp3\'type=\'audio/mp3\'></audio> <br><br> <button onclick=\'deletefavourite14()\' style=\'font-size: small; background-color:gray;color: whitesmoke; padding:5px;\'>Remove From Favourites</button> <br> <br> <br>";
+    }
+    function myFunction15()
+    {
+        document.getElementById("demo15").innerHTML="<img src=\'pic/bigil.jpg\'  style=\'opacity: 0.7;float: left;width: 150px;padding: 10px;\'><span style=\'font-size: 1.1em; font-family: monospace;\'><b>Verithanam</b></span> <br> <br> <audio controls> <source src=\'songs/Bigil.mp3\'type=\'audio/mp3\'></audio> <br><br> <button onclick=\'deletefavourite15()\' style=\'font-size: small; background-color:gray;color: whitesmoke; padding:5px;\'>Remove From Favourites</button> <br> <br> <br>";
+    }
+    function myFunction16()
+    {
+        document.getElementById("demo16").innerHTML="<img src=\'pic/varam.jpg\'  style=\'opacity: 0.7;float: left;width: 150px;padding: 10px;\'><span style=\'font-size: 1.1em; font-family: monospace;\'><b>Nenjukkul peithidum</b></span> <br> <br> <audio controls> <source src=\'songs/vaaranam.mp3\'type=\'audio/mp3\'></audio> <br><br> <button onclick=\'deletefavourite16()\' style=\'font-size: small; background-color:gray;color: whitesmoke; padding:5px;\'>Remove From Favourites</button> <br> <br> <br>";
+    }
+    function myFunction17()
+    {
+        document.getElementById("demo17").innerHTML="<img src=\'pic/kadahl.jpg\'  style=\'opacity: 0.7;float: left;width: 150px;padding: 10px;\'><span style=\'font-size: 1.1em; font-family: monospace;\'><b>Kadhal Aasai</b></span> <br> <br> <audio controls> <source src=\'songs/Anjaan.mp3\'type=\'audio/mp3\'></audio> <br><br> <button onclick=\'deletefavourite17()\' style=\'font-size: small; background-color:gray;color: whitesmoke; padding:5px;\'>Remove From Favourites</button> <br> <br> <br>";
+    }
+    function deletefavourite1()
+    {
+        document.getElementById("demo1").innerHTML="";
+    }
+    function deletefavourite2()
+    {
+        document.getElementById("demo2").innerHTML="";
+    }
+    function deletefavourite3()
+    {
+        document.getElementById("demo3").innerHTML="";
+    }
+    function deletefavourite4()
+    {
+        document.getElementById("demo4").innerHTML="";
+    }
+    function deletefavourite5()
+    {
+        document.getElementById("demo5").innerHTML="";
+    }
+    function deletefavourite6()
+    {
+        document.getElementById("demo6").innerHTML="";
+    }
+    function deletefavourite7()
+    {
+        document.getElementById("demo65").innerHTML="";
+    }
+    function deletefavourite8()
+    {
+        document.getElementById("demo8").innerHTML="";
+    }
+    function deletefavourite9()
+    {
+        document.getElementById("demo9").innerHTML="";
+    }
+    function deletefavourite10()
+    {
+        document.getElementById("demo10").innerHTML="";
+    }
+    function deletefavourite11()
+    {
+        document.getElementById("demo11").innerHTML="";
+    }
+    function deletefavourite12()
+    {
+        document.getElementById("demo12").innerHTML="";
+    }
+    function deletefavourite13()
+    {
+        document.getElementById("demo13").innerHTML="";
+    }
+    function deletefavourite14()
+    {
+        document.getElementById("demo14").innerHTML="";
+    }
+    function deletefavourite15()
+    {
+        document.getElementById("demo15").innerHTML="";
+    }
+    function deletefavourite16()
+    {
+        document.getElementById("demo16").innerHTML="";
+    }
+    function deletefavourite17()
+    {
+        document.getElementById("demo17").innerHTML="";
+    }
+</script>
+</head>
+<body>
+    <header class=header>
+   <h1 style="color: aliceblue;"><b>My Music</b></h1>
+   </header>
+   <br>
+   <br>
+   <br>
+   <div class="wrap">
+<div id="left">
+   <p class="header-text">Playlists</p>
+   <div class="popular-artist-container radio-station">
+    <div class="radio-single-container">
+        <img src="pic/agal.jpg"  style="opacity: 0.7;float: left;width: 150px;padding: 10px;">
+        <span style="font-size: 1.1em; font-family: monospace;"><b>Agalaathey</b></span>
+        <p style="color:antiquewhite">Artist:yuvan Shankar Raj</p>
+        <p style="color: antiquewhite;">Album:Nerkonda Paarvaii</p>
+        <audio controls loop id="t1">
+            <source src="songs/Agalaathey.mp3"type="audio/mp3">
+        </audio>
+    </div>
+    <button onclick="myFunction1()" class="button1" style="font-size: small; background-color:gray;color: whitesmoke;">Add to Favourites</button>
+<br>
+    <div class="radio-single-container">
+        <img src="pic/mazhai.jpg"  style="opacity: 0.7;float: left;width: 150px;padding: 10px;">
+        <span style="font-size: 1.1em; font-family: monospace;"><b>Mazhaiyum Theeyum</b></span>
+        <p style="color:antiquewhite">Artist:Guru RandhaWa</p>
+        <p style="color: antiquewhite;">Album:Saaho</p>
+        <audio controls>
+            <source src="songs/Mazhaiyum Theeyum.mp3"type="audio/mp3">
+        </audio>
+    </div>
+    <button onclick="myFunction2()" style="font-size: small; background-color:gray;color: whitesmoke;">Add to Favourites</button>
+    <br>
+
+    <div class="radio-single-container">
+        <img src="pic/unnaal.jpg"  style="opacity: 0.7;float: left;width: 150px;padding: 10px;">
+        <span style="font-size: 1.1em; font-family: monospace;"><b>Unnaal Unnaal</b></span>
+        <p style="color:antiquewhite">Artist:Palak Muchhal</p>
+        <p style="color: antiquewhite;">Album:MSD The Untold Story</p>
+        <audio controls>
+            <source src="songs/Unnaal Unnaal.mp3"type="audio/mp3">
+        </audio>
+    </div>
+    <button onclick="myFunction3()" style="font-size: small; background-color:gray;color: whitesmoke;">Add to Favourites</button>
+<br>
+<br>
+    <div class="radio-single-container">
+        <br>
+        <img src="pic/dhom.jpg"  style="opacity: 0.7;float: left;width: 150px;padding: 10px;">
+        <span style="font-size: 1.1em; font-family: monospace;"><b>Dhom Dhom</b></span>
+        <p style="color:antiquewhite">Artist:HipHop Tamizha</p>
+        <p style="color: antiquewhite;">Album:Naaan Serithal</p>
+        <audio controls>
+            <source src="songs/Dhom Dhom.mp3"type="audio/mp3">
+        </audio>
+    </div>
+    <button onclick="myFunction4()" style="font-size: small; background-color:gray;color: whitesmoke;">Add to Favourites</button>
+<br>
+    <div class="radio-single-container">
+        <img src="pic/high.jpg"  style="opacity: 0.7;float: left;width: 150px;padding: 10px;">
+        <span style="font-size: 1.1em; font-family: monospace;"><b>High On Love</b></span>
+        <p style="color:antiquewhite">Artist:Sid Sriram</p>
+        <p style="color: antiquewhite;">Album:Pyaar Prema Kadhal</p>
+        <audio controls>
+            <source src="songs/High On Love.mp3"type="audio/mp3">
+        </audio>
+    </div>
+    <button onclick="myFunction5()" style="font-size: small; background-color:gray;color: whitesmoke;">Add to Favourites</button>
+<br>
+    <div class="radio-single-container">
+        <img src="pic/you.jpg"  style="opacity: 0.7;float: left;width: 150px;padding: 10px;">
+        <span style="font-size: 1.1em; font-family: monospace;"><b>You'Re The One</b></span>
+        <p style="color:antiquewhite">Artist:Inno Genga</p>
+        <p style="color: antiquewhite;">Album:Gulaebaghavali</p>
+        <audio controls>
+            <source src="songs/You'Re The One.mp3"type="audio/mp3">
+        </audio>
+    </div>
+    <button onclick="myFunction6()" style="font-size: small; background-color:gray;color: whitesmoke;">Add to Favourites</button>
+    <br>
+    <br>
+    <p id="demo7"></p>
+    <p class="header-text">Other Languages</p>
+<h2>English</h2>
+<div class="radio-single-container">
+    <img src="pic/justin.jpg"  style="opacity: 0.7;float: left;width: 150px;padding: 10px;">
+    <span style="font-size: 1.1em; font-family: monospace;"><b>Baby</b></span>
+    <p style="color:antiquewhite">Artist:Justin Biebar</p>
+    <p style="color: antiquewhite;">Album Song</p>
+    <audio controls>
+        <source src="songs/justin.mp3"type="audio/mp3">
+    </audio>
+</div>
+<button onclick="myFunction11()" style="font-size: small; background-color:gray;color: whitesmoke;">Add to Favourites</button>
+<br>
+<br>
+<div class="radio-single-container">
+    <img src="pic/oh.jpg"  style="opacity: 0.7;float: left;width: 150px;padding: 10px;">
+    <span style="font-size: 1.1em; font-family: monospace;"><b>Ohh Na Na</b></span>
+    <p style="color:antiquewhite">Artist:Justin Biebar</p>
+    <p style="color: antiquewhite;">Album:Album Song</p>
+    <audio controls>
+        <source src="songs/ohh.mp3"type="audio/mp3">
+    </audio>
+</div>
+<button onclick="myFunction12()" style="font-size: small; background-color:gray;color: whitesmoke;">Add to Favourites</button>
+<br>
+<br>
+<h2>Hindi</h2>
+<div class="radio-single-container">
+    <img src="pic/ms.jpg"  style="opacity: 0.7;float: left;width: 150px;padding: 10px;">
+    <span style="font-size: 1.1em; font-family: monospace;"><b>JAB TAK</b></span>
+    <p style="color:antiquewhite">Artist:Sushant Singh</p>
+    <p style="color: antiquewhite;">Album:MSD The Untold Story</p>
+    <audio controls>
+        <source src="songs/h2.mp3"type="audio/mp3">
+    </audio>
+</div>
+<button onclick="myFunction13()" style="font-size: small; background-color:gray;color: whitesmoke;">Add to Favourites</button>
+<br>
+<br>
+<div class="radio-single-container">
+    <img src="pic/getha.jpg"  style="opacity: 0.7;float: left;width: 150px;padding: 10px;">
+    <span style="font-size: 1.1em; font-family: monospace;"><b>Ethna na mae</b></span>
+    <p style="color:antiquewhite">Artist:Sid Sriram</p>
+    <p style="color: antiquewhite;">Album:Getha Gouvitham</p>
+    <audio controls>
+        <source src="songs/h1.mp3"type="audio/mp3">
+    </audio>
+</div>
+<button onclick="myFunction14()" style="font-size: small; background-color:gray;color: whitesmoke;">Add to Favourites</button>
+<br>
+<br>
+</div>
+</div>
+</div>
+<div class="right">
+    <br>
+    <p class="header-text">Favourties</p>
+    <p id="demo1"></p>       
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+    <p id="demo65"></p>
+    <p id="demo8"></p>
+    <div>
+        <p class="header-text">Genres</p>
+        <h2> Rock</h2>
+        <div class="radio-single-container">
+            <img src="pic/petta.jpg"  style="opacity: 0.7;float: left;width: 150px;padding: 10px;">
+            <span style="font-size: 1.1em; font-family: monospace;"><b>Marana Mass</b></span>
+            <p style="color:antiquewhite">Artist:Anirudh</p>
+            <p style="color: antiquewhite;">Album:Petta</p>
+            <audio controls>
+                <source src="songs/Marana.mp3"type="audio/mp3">
+            </audio>
+        </div>
+        <button onclick="myFunction7()" style="font-size: small; background-color:gray;color: whitesmoke;">Add to Playlist</button>
+        <br>
+        <br>
+        <div class="radio-single-container">
+            <img src="pic/single.jpg"  style="opacity: 0.7;float: left;width: 150px;padding: 10px;">
+            <span style="font-size: 1.1em; font-family: monospace;"><b>Single Pasanga</b></span>
+            <p style="color:antiquewhite">Artist:HipHop Tamizha</p>
+            <p style="color: antiquewhite;">Album:Natpe Thunai</p>
+            <audio controls>
+                <source src="songs/Natpe Thunai.mp3"type="audio/mp3">
+            </audio>
+        </div>
+        <button onclick="myFunction8()" style="font-size: small; background-color:gray;color: whitesmoke;">Add to Favourites</button>
+        <br>
+        <br>
+        <div class="radio-single-container">
+            <img src="pic/bigil.jpg"  style="opacity: 0.7;float: left;width: 150px;padding: 10px;">
+            <span style="font-size: 1.1em; font-family: monospace;"><b>Verithanam</b></span>
+            <p style="color:antiquewhite">Artist:AR Rahaman</p>
+            <p style="color: antiquewhite;">Album:Bigil</p>
+            <audio controls>
+                <source src="songs/Bigil.mp3"type="audio/mp3">
+            </audio>
+        </div>
+        <button onclick="myFunction15()" style="font-size: small; background-color:gray;color: whitesmoke;">Add to Favourites</button>
+        <br>
+        <br>
+        <h2>Pop</h2>
+        <div class="radio-single-container">
+            <img src="pic/rowdy.jpg"  style="opacity: 0.7;float: left;width: 150px;padding: 10px;">
+            <span style="font-size: 1.1em; font-family: monospace;"><b>Rowdy Baby</b></span>
+            <p style="color:antiquewhite">Artist:Yuvan Shankar Raja</p>
+            <p style="color: antiquewhite;">Album:Maari 2</p>
+            <audio controls>
+                <source src="songs/Rowdy Baby.mp3"type="audio/mp3">
+            </audio>
+        </div>
+        <button onclick="myFunction9()" style="font-size: small; background-color:gray;color: whitesmoke;">Add to Favourites</button>
+        <br>
+        <br>
+        <div class="radio-single-container">
+            <img src="pic/vadi.jpg"  style="opacity: 0.7;float: left;width: 150px;padding: 10px;">
+            <span style="font-size: 1.1em; font-family: monospace;"><b>Vadi Pulla</b></span>
+            <p style="color:antiquewhite">Artist:HipHop Tamizha</p>
+            <p style="color: antiquewhite;">Album:Meesaya Muruku</p>
+            <audio controls>
+                <source src="songs/Vaadi.mp3"type="audio/mp3">
+            </audio>
+        </div>
+        <button onclick="myFunction10()" style="font-size: small; background-color:gray;color: whitesmoke;">Add to Favourites</button>
+        <br>
+        <br>
+        <h2>Soul</h2>
+        <div class="radio-single-container">
+            <img src="pic/varam.jpg"  style="opacity: 0.7;float: left;width: 150px;padding: 10px;">
+            <span style="font-size: 1.1em; font-family: monospace;"><b>Nenjukkaul Peidhaidum</b></span>
+            <p style="color:antiquewhite">Artist:Harris Jayaraj</p>
+            <p style="color: antiquewhite;">Album:Vaaram Aayiram</p>
+            <audio controls>
+                <source src="songs/Vaaranam.mp3"type="audio/mp3">
+            </audio>
+        </div>
+        <button onclick="myFunction16()" style="font-size: small; background-color:gray;color: whitesmoke;">Add to Favourites</button>
+        <br>
+        <br>
+        <div class="radio-single-container">
+            <img src="pic/kadahl.jpg"  style="opacity: 0.7;float: left;width: 150px;padding: 10px;">
+            <span style="font-size: 1.1em; font-family: monospace;"><b>Kadhal Aasai</b></span>
+            <p style="color:antiquewhite">Artist:yuvan Shankar Raja</p>
+            <p style="color: antiquewhite;">Album:Anjaan</p>
+            <audio controls>
+                <source src="songs/Anjaan.mp3"type="audio/mp3">
+            </audio>
+        </div>
+        <button onclick="myFunction17()" style="font-size: small; background-color:gray;color: whitesmoke;">Add to Favourites</button>
+        <br>
+        <br>
+    </div>
+</div>
+</div>
+</body>
+</html>

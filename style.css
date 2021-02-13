@@ -1,0 +1,66 @@
+body{
+  background-color: rgb(88, 78, 78);
+  color:white;
+}
+.header{
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  background-color:lightslategray;
+  display: flex;
+  flex-direction: row;
+  margin-top: -10px;
+  margin-left: -8px;
+  margin-right: 0px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  /*background-image: linear-gradient(to right, orange , blue);  */
+  /*background-image: linear-gradient(to right, #FFFFFF , 	#F0FFFF); */
+  z-index: 100;
+
+}
+.header h1
+{
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 45%;
+}
+.header-text{
+  margin-left: 10px;
+	font-family: sans-serif;
+	font-weight: 800;
+	font-size: 150%;
+}
+.popular-artist-box{
+	display: flex;
+	flex-direction: column;
+	margin: 5px;
+	/*width:200px;*/
+	min-width: 15.5%;
+
+}
+#wrap {
+  width:2000px;
+  margin:0 auto;
+}
+#left {
+  float:left;
+  width:1000px;
+}
+#right {
+  float:right;
+  width:1000px;
+}
+/* Create two equal columns that floats next to each other */
+.coloum {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 100%; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
